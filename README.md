@@ -8,9 +8,9 @@ manage OpenBAS using Docker.
 
 ## Kyber Deployment
 
-To start OpenBAS with the Caldera injector (Caldera used as an implant), run:
+I combined the docker-compose for caldera (caldera, injector, and executor) into the primary docker.compose and added the neccessary environment variables. I also updated the env with sample information. To start OpenBAS with Caldera, now just run:
 ```bash
-   docker compose -p openbas -f docker-compose.yml -f docker-compose.caldera.yml -f docker-compose.caldera-injector.yml -f docker-compose.caldera-executor.yml up -d
+   docker compose -p openbas -f docker-compose.yml up -d
 ```
 
 ---
