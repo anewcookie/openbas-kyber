@@ -86,6 +86,15 @@ services:
       - OPENBAS_MAIL_IMAP_SSL_ENABLE=${OPENBAS_MAIL_IMAP_SSL_ENABLE}
       - OPENBAS_MAIL_IMAP_SSL_TRUST=*
       - OPENBAS_MAIL_IMAP_STARTTLS_ENABLE=${OPENBAS_MAIL_IMAP_STARTTLS_ENABLE}
+      # Add this environment variable to connect OpenBAS and Caldera:
+      - INJECTOR_CALDERA_ENABLE=true
+      - INJECTOR_CALDERA_URL=${CALDERA_URL:-http://caldera:8888}
+      - INJECTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL:-http://localhost:8888}
+      - INJECTOR_CALDERA_API_KEY=${CALDERA_API_KEY:-ChangeMe}
+      - EXECUTOR_CALDERA_ENABLE=true
+      - EXECUTOR_CALDERA_URL=${CALDERA_URL:-http://caldera:8888}
+      - EXECUTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL:-http://localhost:8888}
+      - EXECUTOR_CALDERA_API_KEY=${CALDERA_API_KEY:-ChangeMe}
     ports:
       - "8080:8080" # If you change the host port (the left one) do not forget to update OPENBAS_BASE-URL in you .env
     depends_on:

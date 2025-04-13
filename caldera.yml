@@ -2,15 +2,15 @@
 
 users:
   red:
-    red: ChangeMe                                                                     # Change this
+    red: EquatorConcludeShrubs1Numerous                                                                     # Change this
   blue:
-    blue: ChangeMe                                                                    # Change this
-api_key_red: ChangeMe                                                                 # Change this
-api_key_blue: ChangeMe                                                                # Change this
-api_key: ChangeMe                                                                     # Change this
-crypt_salt: ChangeMe                                                                  # Change this
-encryption_key: ChangeMe                                                              # Change this
-app.contact.http: http://localhost:8888                                               # Change this
+    blue: ExceptionMaximize8AnotherMarbles                                                                    # Change this
+api_key_red: PostnasalGilledEvade3Canister                                                                 # Change this
+api_key_blue: AidsUpstroke5CrinkleMunicipal                                                                # Change this
+api_key: Lavish1SubmersedDimlyVeneering                                                                     # Change this
+crypt_salt: OcelotRiverbank7UnbittenDissuade                                                                  # Change this
+encryption_key: ChaperonePeculiarMundanePelvis8                                                              # Change this
+app.contact.http: http://caldera.kyber:8888                                               # Change this
 app.contact.tcp: 0.0.0.0:7010
 app.contact.udp: 0.0.0.0:7011
 app.contact.websocket: 0.0.0.0:7012
@@ -25,7 +25,7 @@ app.contact.tunnel.ssh.host_key_file: REPLACE_WITH_KEY_FILE_PATH                
 app.contact.tunnel.ssh.host_key_passphrase: REPLACE_WITH_KEY_FILE_PASSPHRASE          # Optional
 app.contact.tunnel.ssh.socket: 0.0.0.0:8022
 app.contact.tunnel.ssh.user_name: sandcat
-app.contact.tunnel.ssh.user_password: ChangeMe                                        # Change this
+app.contact.tunnel.ssh.user_password: OnionObservingUnreeling9Limelight                                        # Change this
 objects.planners.default: atomic
 requirements:
   go:

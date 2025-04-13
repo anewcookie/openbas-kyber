@@ -1,7 +1,17 @@
+
 # OpenBAS Docker Deployment
 
 Welcome to the OpenBAS Docker deployment guide! This guide provides resources and information to help you deploy and
 manage OpenBAS using Docker.
+
+---
+
+## Kyber Deployment
+
+To start OpenBAS with the Caldera injector (Caldera used as an implant), run:
+```bash
+   docker compose -p openbas -f docker-compose.yml -f docker-compose.caldera.yml -f docker-compose.caldera-injector.yml -f docker-compose.caldera-executor.yml up -d
+```
 
 ---
 
