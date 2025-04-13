@@ -5,7 +5,7 @@ services:
     ports:
       - "8888:8888" # If you change the host port (the left one) do not forget to update CALDERA_PUBLIC_URL everywhere
     environment:
-      CALDERA_URL: ${CALDERA_PUBLIC_URL:-http://localhost:8888}
+      CALDERA_URL: ${CALDERA_PUBLIC_URL}
     volumes:
       - type: bind
         source: ./caldera.yml
@@ -104,13 +104,13 @@ services:
       - OPENBAS_MAIL_IMAP_STARTTLS_ENABLE=${OPENBAS_MAIL_IMAP_STARTTLS_ENABLE}
       # Add this environment variable to connect OpenBAS and Caldera:
       - INJECTOR_CALDERA_ENABLE=true
-      - INJECTOR_CALDERA_URL=${CALDERA_URL:-http://caldera:8888}
-      - INJECTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL:-http://localhost:8888}
-      - INJECTOR_CALDERA_API_KEY=${CALDERA_API_KEY:-ChangeMe}
+      - INJECTOR_CALDERA_URL=${CALDERA_URL}
+      - INJECTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL8}
+      - INJECTOR_CALDERA_API_KEY=${CALDERA_API_KEY}
       - EXECUTOR_CALDERA_ENABLE=true
-      - EXECUTOR_CALDERA_URL=${CALDERA_URL:-http://caldera:8888}
-      - EXECUTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL:-http://localhost:8888}
-      - EXECUTOR_CALDERA_API_KEY=${CALDERA_API_KEY:-ChangeMe}
+      - EXECUTOR_CALDERA_URL=${CALDERA_URL}
+      - EXECUTOR_CALDERA_PUBLIC_URL=${CALDERA_PUBLIC_URL}
+      - EXECUTOR_CALDERA_API_KEY=${CALDERA_API_KEY}
     ports:
       - "8080:8080" # If you change the host port (the left one) do not forget to update OPENBAS_BASE-URL in you .env
     depends_on:
